@@ -1,6 +1,6 @@
-# API de la Biblioteca — Proyecto Integrador Módulo 3
+# API de la Biblioteca — Proyecto Integrador de Schroder Gonzalo Joel
 
-API REST desarrollada con **FastAPI** y **Pydantic** para gestionar el catálogo de libros de una biblioteca (crear, listar, filtrar, paginar, buscar, actualizar, prestar, devolver y eliminar libros) con persistencia automática en archivo JSON (`datos/libros.json`).
+API REST desarrollada con **FastAPI**  para gestionar el catálogo de libros de una biblioteca (crear, listar, filtrar, paginar, buscar, actualizar, prestar, devolver y eliminar libros) con persistencia automática en archivo JSON .
 
 ## Requisitos e instalación
 
@@ -53,17 +53,4 @@ Una vez iniciado el servidor, la documentación interactiva estará disponible e
 | `POST` | `/libros/{id}/prestar` | Marca un libro disponible como prestado (`disponible: false`) | `200`, `404`, `409` |
 | `POST` | `/libros/{id}/devolver` | Marca un libro prestado como devuelto (`disponible: true`) | `200`, `404`, `409` |
 
-## Guía paso a paso para entregar (GitHub + Formulario)
 
-Si descargaste el archivo `api-biblioteca.zip`, al descomprimirlo ya tenés la carpeta lista con `.gitignore`, `README.md`, `requirements.txt`, `main.py` y un historial de **6 commits progresivos** listos para subir (cumpliendo la condición **E6**):
-
-1. Creá un repositorio **Público** vacío en GitHub llamado `api-biblioteca` (sin marcar "Add a README" ni `.gitignore`).
-2. Abrí PowerShell dentro de la carpeta descomprimida `api-biblioteca` y ejecutá:
-   ```powershell
-   python -c "import main"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/api-biblioteca.git
-   git push -u origin main
-   ```
-3. Abrí la URL `https://github.com/TU-USUARIO/api-biblioteca` en una ventana de incógnito para verificar que sea pública y que no figuren `.venv` ni `__pycache__`.
-4. Completá el formulario de entrega antes del **lunes 16 de noviembre de 2026 a las 19:30 hs** en `https://edemake.com/entrega-backend-integrador-1` con tu DNI, correo electrónico, nombre completo (**Gonzalo Joel Schröder**) y la URL del repositorio.
